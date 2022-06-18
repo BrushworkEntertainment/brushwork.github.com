@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<!--SITE DEVELOPED BY AARON KERKER-->
+
+<html lang="en">
+    <head>
+        <title>
+            Brushwork Entertainment
+        </title>
+        <link rel="stylesheet" type="text/css" href="content/text/css/index.css"> 
+    </head>
+    <body>
+        <section> <!--Main Logo Section (With parallax... UUUUUU fancy)-->
+            <img src="content/img/Site_Background.png" id="Background">
+            <img src="content/img/BE_Logo.png" alt="Brushwork Entertainment Logo" id="Logo">
+            <ul class="buttonsection" id="ParallaxText">
+                <li>
+                    <a href="#HLR">HALF-LIFE: REFLECTION</a>
+                </li>
+                <li>
+                    <a href="#ABOUT">ABOUT</a>
+                </li>
+                <li>
+                    <a href="#PEOPLE">TEAM</a>
+                </li>
+                <li>
+                    <a href="#JOIN">JOIN US</a>
+                </li>
+            </ul>
+            <img src="content/img/Explore_Arrow.png" alt="explore" id="Explore_Arrow">
+        </section>
+
+        <div class="textsection" id="HLR">
+            <h2>
+                HALF-LIFE: REFLECTION
+            </h2>
+            <p>
+                Half-Life: Reflection is a modification for Half-Life 2. <br> <br>
+                You play as programmer in a nuclear test facility when all of a sudden one of the reactors faces a critical error. <br>
+                Did you cause it? Was it a mistake in your code? <br>
+                It doesn`t matter. You know you have to deactivate the reactor to save the facility and the residents of the surrounding area. <br>
+                But what you`ll find will proove to be a much larger mystery.
+            </p>
+        </div>
+
+        <div class="textsection" id="ABOUT">
+            <h2>
+                ABOUT BRUSHWORK
+            </h2>
+            <p>
+                Brushwork is an unofficial, independent game-development studio "founded" in 2022. <br> <br>
+                We are a team of enthusiastic developers that want to tell engaging, rich stories using original gameplay. <br>
+                We are currently developing Half-Life: Reflection.
+            </p>
+        </div>
+
+        <div class="textsection" id="PEOPLE">
+            <h2>
+                TEAM
+            </h2>
+            <div class="team">
+                <ul>
+                    <li>
+                        <img src="content/img/Team_Icon_Heisenberg.png">
+                        <h2>JOHANNES "HEISENBERG" WIECK</h2>
+                        <h3>HEISENBERG#0592</h3>
+                        <ul class="teamdetail">
+                            <li class="projectlead"> 
+                                Team Lead
+                            </li>
+                            <li>
+                                Level Designer / Texture Artist
+                            </li>
+                            <li>
+                                Programmer
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="content/img/Team_Icon_Vona.png">
+                        <h2>EMRE "VONA" İLHAN</h2>
+                        <h3>VONA#1670</h3>
+                        <ul class="teamdetail">
+                            <li>
+                                Concept Artist / Writer
+                            </li>
+                            <li>
+                                Level Designer
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="content/img/Team_Icon_MrGermanDeutsch.png">
+                        <h2>"MRGERMANDEUTSCH"</h2>
+                        <h3>MRGERMANDEUTSCH#0245</h3>
+                        <ul class="teamdetail">
+                            <li>
+                                Programmer / Level Designer
+                            </li>
+                            <li>
+                                Texture Artist
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="content/img/Team_Icon_Beardless.png">
+                        <h2>AARON "THE BEARDLESS" KERKER</h2>
+                        <h3>THE BEARDLESS#5095</h3>
+                        <ul class="teamdetail">
+                            <li>
+                                3d Artist / Level Designer
+                            </li>
+                            <li>
+                                Programmer
+                            </li>
+                            <li>
+                                Community & Social-Media Manager
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="textsection" id="JOIN">
+            <h2>
+                JOIN US
+            </h2>
+            <p>
+                We are always looking for new members to join the Brushwork team. Please note work on the mod is voluntary and unpaid.
+                If you are interested, contact us: <a href="mailto:halflife.reflection@gmail.com">halflife.reflection@gmail.com</a>
+            </p>
+        </div>
+
+        <div class="copyrightsection">
+            <p>
+                POWERED BY GITHUB PAGES
+            </p>
+        </div>
+
+        <script>
+            let ParallaxText = document.getElementById("ParallaxText");
+            let Background = document.getElementById("Background");
+            let Logo = document.getElementById("Logo");
+            let Arrow = document.getElementById("Explore_Arrow");
+        
+            window.addEventListener
+            ('scroll',function()
+            {
+                let value = window.scrollY;
+                
+                Background.style.top = value + 'px';
+
+                Logo.style.marginTop = value + 'px';
+                Logo.style.opacity = 1.5 - (value * 0.0015);
+
+                ParallaxText.style.marginTop = value + 100 + 'px';
+                ParallaxText.style.opacity = 1.5 - (value * 0.0015);
+
+                Arrow.style.marginTop = 4 * value + 900 + 'px';
+                Arrow.style.opacity = 1-(value * 0.05);
+            }
+            );
+        </script>
+    </body>
+</html>

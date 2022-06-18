@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+
+    scroll-behavior: smooth;
+
+    overflow-x: hidden;
+}
+body
+{
+    min-height: 100vh;
+    background: rgb(20,23,25);
+}
+
+/*-------------------------------------------*/
+/* parallaxical magic */
+
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+section img#Background
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section img#Explore_Arrow
+{
+    z-index: 500;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 900px;
+}
+
+section img#Logo
+{
+    z-index: 500;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+    margin: auto;
+    margin-bottom: 200px;
+}
+
+.buttonsection
+{
+    color: #fff;
+    margin-top: 100px;
+    position: absolute;
+    z-index: 500;
+    white-space: nowrap;
+    font-size: 1.75em;
+    font-weight:300;
+    margin-left: 0px;
+}
+
+.buttonsection a
+{
+    text-decoration: none;
+}
+
+.buttonsection a:hover
+{
+    font-weight: bold;
+}
+
+.textsection
+{
+    position: relative;
+    padding: 5% 7%;
+    background: rgb(20,23,25);
+}
+
+.textsection h2
+{
+    margin-bottom: 25px;
+    font-size: 2.5em;
+}
+
+.textsection p
+{
+    font-size: 1.2em;
+}
+
+.team
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.team img
+{
+    margin-top: 50px;
+    margin-bottom: 5px;
+    width: 128px;
+    height: 128px;
+    object-fit: fill;
+    border-radius: 100%;
+}
+
+.team h2
+{
+    font-size: 2em;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+}
+
+.team h3
+{
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #5865F2;
+}
+
+.team li
+{
+    margin-bottom: 4px;
+}
+
+.teamdetail
+{
+    font-size: 1.2em;
+}
+
+.projectlead
+{
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.copyrightsection
+{
+    position: relative;
+    padding: 20px 7%;
+    background: rgb(2, 3, 7);
+    text-align: center;
+}
