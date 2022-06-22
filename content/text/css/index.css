@@ -152,11 +152,28 @@ section img#Logo
     font-size: 1.2em;
 }
 
-.projectlead
+.position
 {
     font-weight: bold;
-    font-size: 1.25em;
+    font-size: 1.2em;
 }
+
+.joinsection
+{
+    margin-top: 25px;
+    columns: 2;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.joinsection li
+{
+    text-align: center;
+    color: #e84118;
+    font-size: 1.3em;
+}
+
+/*color: #4cd137;*/
 
 .copyrightsection
 {
